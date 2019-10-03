@@ -1387,7 +1387,7 @@
 			<!-- ================================================================= -->
 			<!-- Informix 4gl parser -->
 			<parser id="4gl_function" displayName="informix_4gl" commentExpr="(#.?$)">
-            <function mainExpr="^\s*(private\s+|public\s+){0,1}function\s+\K[\w_]+(?=\s*\()" displayMode="$functionName$">
+            <function mainExpr="^\s*(private\s+|public\s+){0,1}(function|report)\s+\K[\w_]+(?=\s*\()" displayMode="$functionName$">
                 <functionName>
                     <nameExpr expr=".+"/>
                 </functionName>
